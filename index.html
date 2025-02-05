@@ -5,93 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Quintal Perdizes - Creche, Hotel para Cães, e Produtos para Pets em São Paulo">
     <title>Quintal Perdizes</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header class="bg-light">
         <div class="container">
-            <h1>Quintal Perdizes</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="imagens/logo2.png" alt="Quintal">Quintal das Perdizes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="html/sobre.html">Sobre nos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/contato.html">Contato</a></li>
+                    </ul>
+                    <!-- Barra de Busca -->
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2" type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                    <!-- Ícones de Sacola, Favoritos e Pessoa -->
+                    <div class="d-flex">
+                        <a href="#" class="text-dark me-3" id="btn-favoritos">
+                            <i class="bi bi-heart"></i> <!-- Ícone de Favoritos -->
+                        </a>
+                        <a href="#" class="text-dark me-3" id="btn-carrinho">
+                            <i class="bi bi-bag"></i> <!-- Ícone de Sacola -->
+                            <span id="contador-carrinho" class="badge bg-danger">0</span> <!-- Contador de itens -->
+                        </a>
+                        <!-- Ícone de Pessoa com Menu Suspenso -->
+                        <div class="dropdown">
+                            <a href="#" class="text-dark dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person"></i> <!-- Ícone de Pessoa -->
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="html/login.html">Entrar</a></li>
+                                <li><a class="dropdown-item" href="html/cadastro.html">Cadastrar-se</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-
-    <!-- Banner ou Introdução -->
-    <section class="banner">
-        <div class="container">
-            <h2>Bem-vindo ao Quintal Perdizes</h2>
-            <p>O melhor lugar para seu pet com segurança, carinho e diversão.</p>
+    
+    
+<!-- Banner ou Introdução -->
+<section class="banner text-white text-center py-5">
+    <div class="container">
+        <h2 class="display-4">Bem-vindo ao Quintal Perdizes</h2>
+        <p class="lead">O melhor lugar para seu pet com segurança, carinho e diversão.</p>
+    </div>
+</section>
+    <!-- Carrossel -->
+    <section id="carrossel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://images.petz.com.br/fotos/Home_Desk_1900x390_Racoes30OFF.gif" class="d-block w-100" alt="30%off rações">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://images.petz.com.br/fotos/Home_Desk_1900x390_HigieneBeleza.jpg" class="d-block w-100" alt="30%off higene e beleza">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://images.petz.com.br/fotos/BN-outlet-com-ate-70-offtesteira_2000x300_outlet.gif" class="d-block w-100" alt="Banner 3">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
         </div>
+        <!-- Controles do Carrossel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
     </section>
+
+   
 
     <!-- Serviços -->
-    <section class="servicos">
+    <section class="servicos py-5">
         <div class="container">
-            <h2>Nossos Serviços</h2>
-            <ul>
-                <li>Creche diária para cães</li>
-                <li>Hotel para cães</li>
-                <li>Treinamento comportamental</li>
-                <li>Banho e tosa</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Espaços -->
-    <section class="espacos">
-        <div class="container">
-            <h2>Conheça nossos Espaços</h2>
-            <p>Ambientes ao ar livre e áreas seguras para seu pet se divertir e relaxar.</p>
-            <img src="images/espaco.jpg" alt="Espaço ao ar livre para cães">
-        </div>
-    </section>
-
-    <!-- Produtos -->
-    <section class="produtos">
-        <div class="container">
-            <h2>Produtos para Pets</h2>
-            <div class="produto-lista">
-                <div class="produto">
-                    <img src="images/produto1.jpg" alt="Cama para cães">
-                    <h3>Cama para cães</h3>
-                    <p>R$ 120,00</p>
+            <h2 class="text-center mb-4">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <h3>Creche diária</h3>
+                    <img src="imagens/russel_dog_animal.png" alt="creche diária" class="img-fluid rounded">
+                    <p>Deixe seu cão conosco durante o dia.</p>
                 </div>
-                <div class="produto">
-                    <img src="images/produto2.jpg" alt="Brinquedo interativo">
-                    <h3>Brinquedo interativo</h3>
-                    <p>R$ 45,00</p>
+                <div class="col-md-3 text-center">
+                    <h3>Hotel para cães</h3>
+                    <img src="imagens/hotelCaes.png" alt="hote para cães" class="img-fluid rounded">
+                    <p>Estadia confortável e segura.</p>
                 </div>
-                <!-- Adicionar mais produtos se necessário -->
+                <div class="col-md-3 text-center">
+                    <h3>Treinamento</h3>
+                    <img src="imagens/trenamentoBoxer.png" alt="trenamentoBoxer" class="img-fluid rounded">
+                    <p>Treinamento comportamental.</p>
+                    
+                </div>
+                <div class="col-md-3 text-center">
+                    <h3>Banho e tosa</h3>
+                    <img src="imagens/banhoTosa.png" alt="Banho e Tosa" class="img-fluid rounded">
+                    <p>Serviços de higiene e beleza.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Depoimentos -->
-    <section class="depoimentos">
+    <!-- Produtos -->
+    <section class="produtos bg-light py-5">
         <div class="container">
-            <h2>O que nossos clientes dizem</h2>
-            <blockquote>
-                "Meus cães amam o Quintal Perdizes! O atendimento é excelente." - Cliente feliz
-            </blockquote>
+            <h2 class="text-center mb-4">Produtos para Pets</h2>
+            <div class="row">
+                <!-- Produto 1 -->
+                <div class="col-md-4 text-center produto">
+                    <img src="images/produto1.jpg" alt="Cama para cães" class="img-fluid rounded">
+                    <h3>Cama para cães</h3>
+                    <p>R$ 120,00</p>
+                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Cama para cães', 120.00)">Comprar</button>
+                    <!-- Área de cálculo de frete (inicialmente oculta) -->
+                    <div class="calcular-frete">
+                        <form class="form-frete">
+                            <div class="mb-2">
+                                <input type="text" class="form-control form-control-sm cep" placeholder="Digite seu CEP" required>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-secondary">Calcular Frete</button>
+                        </form>
+                        <p class="mt-2 valor-frete"></p>
+                    </div>
+                </div>
+                <!-- Produto 2 -->
+                <div class="col-md-4 text-center produto">
+                    <img src="images/produto2.jpg" alt="Brinquedo interativo" class="img-fluid rounded">
+                    <h3>Brinquedo interativo</h3>
+                    <p>R$ 45,00</p>
+                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Brinquedo interativo', 45.00)">Comprar</button>
+                    <!-- Área de cálculo de frete (inicialmente oculta) -->
+                    <div class="calcular-frete">
+                        <form class="form-frete">
+                            <div class="mb-2">
+                                <input type="text" class="form-control form-control-sm cep" placeholder="Digite seu CEP" required>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-secondary">Calcular Frete</button>
+                        </form>
+                        <p class="mt-2 valor-frete"></p>
+                    </div>
+                </div>
+                <!-- Produto 3 -->
+                <div class="col-md-4 text-center produto">
+                    <img src="images/produto3.jpg" alt="Coleira" class="img-fluid rounded">
+                    <h3>Coleira</h3>
+                    <p>R$ 30,00</p>
+                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Coleira', 30.00)">Comprar</button>
+                    <!-- Área de cálculo de frete (inicialmente oculta) -->
+                    <div class="calcular-frete">
+                        <form class="form-frete">
+                            <div class="mb-2">
+                                <input type="text" class="form-control form-control-sm cep" placeholder="Digite seu CEP" required>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-secondary">Calcular Frete</button>
+                        </form>
+                        <p class="mt-2 valor-frete"></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contato -->
-    <footer>
+ 
+
+    <!-- Depoimentos -->
+    <section class="depoimentos py-5">
         <div class="container">
-            <h2>Contato</h2>
+            <h2 class="text-center mb-4">O que nossos clientes dizem</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <blockquote class="blockquote">
+                        <p>"Meus cães amam o Quintal Perdizes! O atendimento é excelente."</p>
+                        <footer class="blockquote-footer">Cliente feliz</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
             <p>Email: contato@quintalperdizes.com</p>
             <p>Telefone: (11) 999377222</p>
             <p>Endereço: Rua Perdizes # 1, São Paulo, SP</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS e Dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    
 </body>
 </html>

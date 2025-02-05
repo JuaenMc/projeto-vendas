@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a história do Quintal Perdizes e nossas fundadoras, Letícia e Paula.">
+    <title>Quintal Perdizes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="../index.html">Quintal Perdizes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                    <!-- Barra de Busca -->
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2" type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                    <!-- Ícones de Sacola, Favoritos e Pessoa -->
+                    <div class="d-flex">
+                        <a href="#" class="text-dark me-3" id="btn-favoritos">
+                            <i class="bi bi-heart"></i> <!-- Ícone de Favoritos -->
+                        </a>
+                        <a href="#" class="text-dark me-3" id="btn-carrinho">
+                            <i class="bi bi-bag"></i> <!-- Ícone de Sacola -->
+                            <span id="contador-carrinho" class="badge bg-danger">0</span> <!-- Contador de itens -->
+                        </a>
+                        <!-- Ícone de Pessoa com Menu Suspenso -->
+                        <div class="dropdown">
+                            <a href="#" class="text-dark dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person"></i> <!-- Ícone de Pessoa -->
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="login.html">Entrar</a></li>
+                                <li><a class="dropdown-item" href="cadastro.html">Cadastrar-se</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+<!-- Seção da História -->
+<section class="historia py-5">
+    
+    <div class="container">
+        <h2 class="text-center mb-4">Nossa História</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    Desde muito cedo, Letícia e Paula aprenderam a enxergar o mundo através do prisma do amor e da empatia. Cresceram em uma pequena fazenda no interior de São Paulo, cercadas pela natureza exuberante, onde cada amanhecer era uma aula de respeito e conexão com os seres vivos.
+                </p>
+                <p>
+                    Mas uma memória marcante da infância das irmãs mudaria para sempre a forma como viam a vida. Certo dia, enquanto brincavam perto de um bosque, ouviram o alvoroço de uma ninhada de perdizes. Uma raposa havia se aproximado, silenciosa e ameaçadora, pronta para atacar. As perdizes adultas lutavam bravamente para proteger suas crias, mas a raposa era implacável, caçando uma a uma as aves maiores, deixando os filhotes indefesos.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="../imagens/fazenda.webp" alt="Fazenda da infância de Letícia e Paula" class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="../imagens/luna.webp" alt="Luna, a cadela heroica" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Foi então que Luna, a cadela da família, interveio. Embora tivesse apenas três meses de seus próprios filhotes para cuidar, Luna, movida por um instinto maternal que transcende espécies, se lançou contra a raposa para salvar as pequenas perdizes.
+                </p>
+                <p>
+                    A cena foi ao mesmo tempo heroica e devastadora. Luna conseguiu afugentar a raposa, mas saiu gravemente ferida. Letícia e Paula, ainda tão jovens, fizeram tudo o que podiam para cuidar da sua fiel amiga, mas Luna não resistiu. Antes de partir, seus olhos refletiam algo profundo: o amor incondicional, a coragem de proteger o próximo e o sacrifício em nome do bem maior.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>
+                    Com o passar dos anos, a memória de Luna e daquelas perdizes indefesas permaneceu viva nos corações de Letícia e Paula. Já adultas e vivendo em São Paulo, elas decidiram transformar esse amor e aprendizado em algo que pudesse impactar positivamente outros seres vivos. Assim nasceu o Quintal Perdizes.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="../imagens/cachorros.webp" alt="Quintal Perdizes" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vídeo da História (Opcional) -->
+<section class="video py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Conheça Nossa História em Vídeo</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-white py-4">
+    <div class="container my-4">
+        <div class="row">
+          <!-- Redes Sociais -->
+          <div class="col-md-6">
+            <h3>Redes Sociais</h3>
+            <div class="d-flex gap-3">
+              <a href="https://www.facebook.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="https://www.youtube.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-youtube fa-2x"></i>
+              </a>
+              <a href="https://www.tiktok.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-tiktok fa-2x"></i>
+              </a>
+              <a href="https://www.pinterest.com" target="_blank" class="text-decoration-none">
+                <i class="fab fa-pinterest fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          
+      
+          <!-- Selos e Certificados -->
+          <div class="col-md-6">
+            <h3>Selos e Certificados</h3>
+            <div class="d-flex flex-wrap gap-3">
+              <img src="https://static.petz.com.br/images/exp-facelift/e-bit.png" alt="Ebit Selo" class="img-fluid">
+              <img src="https://static.petz.com.br/images/exp-facelift/nota-fiscal-paulista.png" alt="Nota Fiscal Paulista" class="img-fluid">
+              <img src="https://static.petz.com.br/images/exp-facelift/google-safe-browsing.png" alt="Google Safe Browsing" class="img-fluid">
+              <img src="https://static.petz.com.br/images/exp-facelift/security-ssl.png" alt="Site Seguro" class="img-fluid">
+              
+            </div>
+          </div>
+
+            <!-- Meios de Pagamento -->
+            <h5>Meios de Pagamento</h5>
+            <div class="payment-logos d-flex justify-content-center align-items-center mt-3">
+              <img src="https://static.petz.com.br/images/exp-facelift/mastercard-logo.png" alt="Mastercard" title="Mastercard">
+              <img src="https://static.petz.com.br/images/exp-facelift/visa-logo.png" alt="Visa" title="Visa">
+              <img src="https://static.petz.com.br/images/exp-facelift/americanexpress-logo.png" alt="American Express" title="American Express">
+              <img src="https://static.petz.com.br/images/exp-facelift/elo-logo.png" alt="Elo" title="Elo">
+              <img src="https://static.petz.com.br/images/exp-facelift/barcode-icon.png" alt="Boleto" title="Boleto">
+              <img src="https://static.petz.com.br/images/exp-facelift/pix-transparent.svg" alt="Pix" title="Pix">
+            </div>
+        </div>
+      </div>
+      
+    <div class="container text-center">
+        <p>Email: contato@quintalperdizes.com</p>
+        <p>Telefone: (11) 999377222</p>
+        <p>Endereço: Rua Perdizes # 1, São Paulo, SP</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS e Dependências -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
