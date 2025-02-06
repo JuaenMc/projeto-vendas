@@ -195,3 +195,22 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 });
+
+//fale conosco
+    document.getElementById('form-contato').addEventListener('submit', function (event) {
+        // Impede o envio padrão do formulário
+        event.preventDefault();
+
+        // Verifica se o formulário é válido
+        if (this.checkValidity()) {
+            // Exibe o alerta personalizado
+            alert('📧 Email enviado com sucesso! 🐶\nEntraremos em contato em breve.');
+
+            // Limpa o formulário após o envio (opcional)
+            this.reset();
+        } else {
+            // Adiciona a classe de validação do Bootstrap se o formulário for inválido
+            this.classList.add('was-validated');
+        }
+    });
+

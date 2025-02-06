@@ -8,7 +8,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- Custom CSS -->
@@ -16,78 +15,88 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="bg-light">
+    <header class="bg-light shadow-sm">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="imagens/logo2.png" alt="Quintal">Quintal das Perdizes</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link" href="html/sobre.html">Sobre nos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/servicos.html">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/produtos.html">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/contato.html">Contato</a></li>
-                    </ul>
-                    <!-- Barra de Busca -->
-                    <form class="d-flex me-3">
-                        <input class="form-control me-2" type="search" placeholder="Buscar produtos..." aria-label="Buscar">
-                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                    </form>
-                    <!-- Ícones de Sacola, Favoritos e Pessoa -->
-                    <div class="d-flex">
-                        <a href="#" class="text-dark me-3" id="btn-favoritos">
-                            <i class="bi bi-heart"></i> <!-- Ícone de Favoritos -->
-                        </a>
-                        <a href="#" class="text-dark me-3" id="btn-carrinho">
-                            <i class="bi bi-bag"></i> <!-- Ícone de Sacola -->
-                            <span id="contador-carrinho" class="badge bg-danger">0</span> <!-- Contador de itens -->
-                        </a>
-                        <!-- Ícone de Pessoa com Menu Suspenso -->
-                        <div class="dropdown">
-                            <a href="#" class="text-dark dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-person"></i> <!-- Ícone de Pessoa -->
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="html/login.html">Entrar</a></li>
-                                <li><a class="dropdown-item" href="html/cadastro.html">Cadastrar-se</a></li>
-                            </ul>
-                        </div>
+            <!-- Primeira linha: Logo e Ícones -->
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <!-- Logo à esquerda -->
+                <a class="navbar-brand" href="../index.html">
+                    <div class="brand-container">
+                        <img src="imagens/logo2.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+                        <span>Quintal Perdizes</span>
+                        
                     </div>
+                    
+                </a>
+                 <!-- Segunda linha: Barra de Busca -->
+                <form class="d-flex w-75">
+                    <input class="form-control me-2" type="search" placeholder="Buscar produtos, marcas e muito mais..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+               
+                
+
+                <!-- Ícones à direita -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-dark me-3" id="btn-favoritos">
+                        <i class="bi bi-heart"></i> <!-- Ícone de Favoritos -->
+                    </a>
+                    <a href="#" class="text-dark me-3" id="btn-carrinho">
+                        <i class="bi bi-bag"></i> <!-- Ícone de Sacola -->
+                        <span id="contador-carrinho" class="badge bg-danger">0</span> <!-- Contador de itens -->
+                    </a>
+                    <!-- Ícone de Pessoa com Menu Suspenso -->
+                    <div class="dropdown">
+                        <a href="#" class="text-dark dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person"></i> <!-- Ícone de Pessoa -->
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="./html/login.html">Entrar</a></li>
+                            <li><a class="dropdown-item" href="./html/cadastro.html">Cadastrar-se</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+           
+           
+
+            <!-- Terceira linha: Atalhos -->
+            <nav class="navbar navbar-expand-lg navbar-light py-2">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavLinks">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./html/sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./html/servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./html/produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./html/contato.html">Contato</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
     </header>
-    
-    
-<!-- Banner ou Introdução -->
-<section class="banner text-white text-center py-5">
-    <div class="container">
-        <h2 class="display-4">Bem-vindo ao Quintal Perdizes</h2>
-        <p class="lead">O melhor lugar para seu pet com segurança, carinho e diversão.</p>
-    </div>
-</section>
+
+    <!-- Banner ou Introdução -->
+    <section class="banner text-center py-1">
+        <div class="container">
+            <h2 class="display-4">Bem-vindo ao Quintal Perdizes</h2>
+            <p class="lead">O melhor lugar para seu pet com segurança, carinho e diversão.</p>
+        </div>
+    </section>
+
     <!-- Carrossel -->
     <section id="carrossel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <img src="https://images.petz.com.br/fotos/Home_Desk_1900x390_Racoes30OFF.gif" class="d-block w-100" alt="30%off rações">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
             </div>
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <img src="https://images.petz.com.br/fotos/Home_Desk_1900x390_HigieneBeleza.jpg" class="d-block w-100" alt="30%off higene e beleza">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
             </div>
             <!-- Slide 3 -->
             <div class="carousel-item">
                 <img src="https://images.petz.com.br/fotos/BN-outlet-com-ate-70-offtesteira_2000x300_outlet.gif" class="d-block w-100" alt="Banner 3">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
             </div>
         </div>
         <!-- Controles do Carrossel -->
@@ -100,8 +109,6 @@
             <span class="visually-hidden">Próximo</span>
         </button>
     </section>
-
-   
 
     <!-- Serviços -->
     <section class="servicos py-5">
@@ -122,7 +129,6 @@
                     <h3>Treinamento</h3>
                     <img src="imagens/trenamentoBoxer.png" alt="trenamentoBoxer" class="img-fluid rounded">
                     <p>Treinamento comportamental.</p>
-                    
                 </div>
                 <div class="col-md-3 text-center">
                     <h3>Banho e tosa</h3>
@@ -140,93 +146,103 @@
             <div class="row">
                 <!-- Produto 1 -->
                 <div class="col-md-4 text-center produto">
-                    <img src="images/produto1.jpg" alt="Cama para cães" class="img-fluid rounded">
-                    <h3>Cama para cães</h3>
-                    <p>R$ 120,00</p>
-                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Cama para cães', 120.00)">Comprar</button>
-                    <!-- Área de cálculo de frete (inicialmente oculta) -->
-                    <div class="calcular-frete">
-                        <form class="form-frete">
-                            <div class="mb-2">
-                                <input type="text" class="form-control form-control-sm cep" placeholder="Digite seu CEP" required>
-                            </div>
-                            <button type="submit" class="btn btn-sm btn-secondary">Calcular Frete</button>
-                        </form>
-                        <p class="mt-2 valor-frete"></p>
-                    </div>
+                    <img src="images/produto1.jpg
+
+" alt="Produto 1" class="img-fluid">
+                    <h3>Nome do Produto 1</h3>
+                    <p class="text-muted
+">Descrição do Produto 1</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
                 <!-- Produto 2 -->
                 <div class="col-md-4 text-center produto">
-                    <img src="images/produto2.jpg" alt="Brinquedo interativo" class="img-fluid rounded">
-                    <h3>Brinquedo interativo</h3>
-                    <p>R$ 45,00</p>
-                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Brinquedo interativo', 45.00)">Comprar</button>
-                    <!-- Área de cálculo de frete (inicialmente oculta) -->
-                    <div class="calcular-frete">
-                        <form class="form-frete">
-                            <div class="mb-2">
-                                <input type="text" class="form-control form-control-sm cep" placeholder="Digite seu CEP" required>
-                            </div>
-                            <button type="submit" class="btn btn-sm btn-secondary">Calcular Frete</button>
-                        </form>
-                        <p class="mt-2 valor-frete"></p>
-                    </div>
+                    <img src="images/produto2.jpg" alt="Produto 2" class="img-fluid">
+                    <h3>Nome do Produto 2</h3>
+                    <p class="text-muted">Descrição do Produto 2</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
                 <!-- Produto 3 -->
                 <div class="col-md-4 text-center produto">
-                    <img src="images/produto3.jpg" alt="Coleira" class="img-fluid rounded">
-                    <h3>Coleira</h3>
-                    <p>R$ 30,00</p>
-                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Coleira', 30.00)">Comprar</button>
-                    <!-- Área de cálculo de frete (inicialmente oculta) -->
-                    <div class="calcular-frete">
-                        <form class="form-frete">
-                            <div class="mb-2">
-                                <input type="text" class="form-control form-control-sm cep" placeholder="Digite seu CEP" required>
-                            </div>
-                            <button type="submit" class="btn btn-sm btn-secondary">Calcular Frete</button>
-                        </form>
-                        <p class="mt-2 valor-frete"></p>
-                    </div>
+                    <img src="images/produto3.jpg" alt="Produto 3" class="img-fluid">
+                    <h3>Nome do Produto 3</h3>
+                    <p class="text-muted
+">Descrição do Produto 3</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
         </div>
     </section>
 
- 
+ <!-- Rodapé -->
+<footer class="bg-white text-black py-3">
+    <div class="container">
+        <div class="row">
+            <!-- Redes Sociais -->
+            <div class="col-md-4 mb-3">
+               
+                <div class="d-flex gap-2">
+                    <a href="https://www.facebook.com" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-tiktok fa-lg"></i>
+                    </a>
+                    <a href="https://www.pinterest.com" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-pinterest fa-lg"></i>
+                    </a>
+                </div>
+            </div>
 
-    <!-- Depoimentos -->
-    <section class="depoimentos py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">O que nossos clientes dizem</h2>
-            <div class="row">
-                <div class="col-md-6 offset-md-3 text-center">
-                    <blockquote class="blockquote">
-                        <p>"Meus cães amam o Quintal Perdizes! O atendimento é excelente."</p>
-                        <footer class="blockquote-footer">Cliente feliz</footer>
-                    </blockquote>
+            <!-- Selos e Certificados -->
+            <div class="col-md-4 mb-3">
+                
+                <div class="d-flex flex-wrap gap-2">
+                    <img src="https://static.petz.com.br/images/exp-facelift/e-bit.png" alt="Ebit Selo" class="img-fluid" style="max-height: 30px;">
+                    <img src="https://static.petz.com.br/images/exp-facelift/nota-fiscal-paulista.png" alt="Nota Fiscal Paulista" class="img-fluid" style="max-height: 30px;">
+                    <img src="https://static.petz.com.br/images/exp-facelift/google-safe-browsing.png" alt="Google Safe Browsing" class="img-fluid" style="max-height: 30px;">
+                    <img src="https://static.petz.com.br/images/exp-facelift/security-ssl.png" alt="Site Seguro" class="img-fluid" style="max-height: 30px;">
+                </div>
+            </div>
+
+            <!-- Meios de Pagamento -->
+            <div class="col-md-4 mb-3">
+               
+                <div class="d-flex flex-wrap gap-2">
+                    <img src="https://static.petz.com.br/images/exp-facelift/mastercard-logo.png" alt="Mastercard" style="max-height: 25px;">
+                    <img src="https://static.petz.com.br/images/exp-facelift/visa-logo.png" alt="Visa" style="max-height: 25px;">
+                    <img src="https://static.petz.com.br/images/exp-facelift/americanexpress-logo.png" alt="American Express" style="max-height: 25px;">
+                    <img src="https://static.petz.com.br/images/exp-facelift/elo-logo.png" alt="Elo" style="max-height: 25px;">
+                    <img src="https://static.petz.com.br/images/exp-facelift/barcode-icon.png" alt="Boleto" style="max-height: 25px;">
+                    <img src="https://static.petz.com.br/images/exp-facelift/pix-transparent.svg" alt="Pix" style="max-height: 25px;">
                 </div>
             </div>
         </div>
-    </section>
 
-    
-
-    <!-- Rodapé -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>Email: contato@quintalperdizes.com</p>
-            <p>Telefone: (11) 999377222</p>
-            <p>Endereço: Rua Perdizes # 1, São Paulo, SP</p>
+        <!-- Informações de Contato -->
+        <div class="text-center mt-1">
+            <p class="mb-1 small">Email: contato@quintalperdizes.com</p>
+            <p class="mb-1 small">Telefone: (11) 999377222</p>
+            <p class="mb-0 small">Endereço: Rua Perdizes # 1, São Paulo, SP</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Bootstrap JS e Dependências -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS e Dependências -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
-    
+ <!-- Font Awesome JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+ <!-- Custom JS -->
+ <script src="js/script.js"></script>
 </body>
 </html>
